@@ -23,6 +23,7 @@ class CustomMathChain:
         self.tools = tools
 
     def ask_question(self, user_prompt):
+        responses = []
         try:
             user_message = HumanMessage(content=user_prompt)
             messages = [self.system_message, user_message]
@@ -31,7 +32,8 @@ class CustomMathChain:
             for tool_call in ai_msg.tool_calls:
                 tool_output = self.tools[tool_call["name"]].invoke(tool_call["args"])
                 logger.info(f"Tool: '{tool_call['name']}' called output: {tool_output}")
+                responses.append(tool_output)
 
-            return ai_msg.content
+            return responses
         except Exception as e:
             logger.error(f"Error during question processing: {e}")

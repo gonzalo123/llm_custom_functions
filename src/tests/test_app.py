@@ -18,7 +18,7 @@ def test_multiply():
     mock_tools['ia_multiply'].invoke.return_value = 10
 
     response = math_chain.ask_question("How much is five times two?")
-    assert response is None
+    assert response == [10]
     mock_llm.bind_tools.return_value.invoke.assert_called_once()
     mock_tools['ia_multiply'].invoke.assert_called_once_with({'a': 5, 'b': 2})
 
@@ -38,7 +38,7 @@ def test_diff():
     mock_tools['ia_diff'].invoke.return_value = 3
 
     response = math_chain.ask_question("How much is five minus two?")
-    assert response is None
+    assert response == [3]
     mock_llm.bind_tools.return_value.invoke.assert_called_once()
     mock_tools['ia_diff'].invoke.assert_called_once_with({'a': 5, 'b': 2})
 
@@ -58,6 +58,6 @@ def test_add():
     mock_tools['ia_add'].invoke.return_value = 7
 
     response = math_chain.ask_question("How much is five plus two?")
-    assert response is None
+    assert response == [7]
     mock_llm.bind_tools.return_value.invoke.assert_called_once()
     mock_tools['ia_add'].invoke.assert_called_once_with({'a': 5, 'b': 2})
