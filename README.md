@@ -82,8 +82,7 @@ class CustomMathChain:
 This custom chain utilizes functions defined here, employing the @tool decorator. It is crucial to properly define 
 input and output variables and provide thorough documentation for our tools. AI leverages this information to 
 determine the appropriate function call for each scenario. Various methods exist for defining our tools; here, I've 
-opted for the simplest approach. For more detailed guidance on defining custom functions, refer to [this resource]
-(https://python.langchain.com/v0.1/docs/modules/tools/toolkits/)
+opted for the simplest approach. For more detailed guidance on defining custom functions, refer to [this resource](https://python.langchain.com/v0.1/docs/modules/tools/toolkits/).
 
 ```python
 from langchain_core.tools import tool
