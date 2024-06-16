@@ -4,9 +4,10 @@ from lib.chains.math_chain.chain import get_chain
 from lib.llm.groq import llm
 
 logging.basicConfig(
-    format='%(asctime)s [%(levelname)s] %(message)s',
-    level='INFO',
-    datefmt='%d/%m/%Y %X')
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level="INFO",
+    datefmt="%d/%m/%Y %X",
+)
 
 logger = logging.getLogger(__name__)
 
