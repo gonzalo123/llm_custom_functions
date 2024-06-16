@@ -17,10 +17,3 @@ def ia_diff(a: int, b: int) -> int:
 def ia_multiply(a: int, b: int) -> int:
     """ Return the product of `a` and `b` """
     return a * b
-
-
-tools = {
-    "ia_sum": ia_sum,
-    "ia_diff": ia_diff,
-    "ia_multiply": ia_multiply
-}

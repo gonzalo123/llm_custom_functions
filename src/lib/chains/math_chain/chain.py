@@ -2,7 +2,7 @@ import logging
 
 from langchain_core.messages import SystemMessage, HumanMessage
 
-from .tools import tools
+from . import tools
 
 logger = logging.getLogger(__name__)
 

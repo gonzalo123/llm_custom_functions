@@ -22,4 +22,4 @@ if __name__ == "__main__":
     for prompt in user_prompts:
         responses = chain.ask_question(prompt)
         for response in responses:
-            print(f"Q: {prompt} R:{response}")
+            print(f"Q: {prompt} A:{response}")
