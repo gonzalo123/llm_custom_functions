@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "ia-functioncalling"
+name = "llm_custom_functions"
 version = "0.1.0"
-description = ""
+description = "Integrating AI Models with Function Calls using Python and LangChain"
 authors = ["Gonzalo Ayuso <gonzalo123@gmail.com>"]
 readme = "README.md"
 
