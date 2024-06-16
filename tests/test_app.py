@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from lib.chains.math_chain.chain import CustomMathChain
+from src.lib.chains.math_chain.chain import CustomMathChain
 
 
 def test_multiply():
